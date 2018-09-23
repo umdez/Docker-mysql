@@ -13,7 +13,7 @@ $ docker run \
  --detach \
  --network host \
  --name=test-mysqldb-5.7 \
- -e MYSQL_ROOT_PASSWORD = "mypassword" \
+ --env="MYSQL_ROOT_PASSWORD = mypassword" \
  mysql:5.7 \
  --max-connections=35
 ```
